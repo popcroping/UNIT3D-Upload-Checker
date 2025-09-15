@@ -20,6 +20,7 @@ class Settings:
                 "lst": "",
                 "ulcx": "",
                 "onlyencodes": "",
+                "ldu": "",
             },
             "gg_path": "",  # Path to GG-Bot e.g. /home/user/gg-bot-upload-assistant/ --- Not required only for export_gg_bot()
             "ua_path": "",  # Path to upload-assistant, e.g. /home/user/uplaad-assistant/ --- Optional
@@ -57,6 +58,7 @@ class Settings:
             "upload.cx": "ulcx",
             "onlyencodes": "onlyencodes",
             "oe": "onlyencodes",
+            "ldu": "ldu",
         }
 
         # Basic hierarchy for qualities used to see if a file is an upgrade
