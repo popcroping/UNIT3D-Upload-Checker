@@ -27,6 +27,7 @@ TRACKER_MAP = {
     "lst": "LST",
     "onlyencodes": "OE",
     "ulcx": "ULCX",
+    "ldu": "LDU",
 }
 
 
@@ -498,9 +499,9 @@ class UploadChecker:
                                     get_media_info(file_location)
                                 )
                                 if not any(
-                                    lang.startswith("en") for lang in audio_language
+                                    isinstance(lang, str) and lang.startswith("en") for lang in audio_language
                                 ) and not any(
-                                    sub.startswith("en") for sub in subtitles
+                                    isinstance(sub, str) and sub.startswith("en") for sub in subtitles
                                 ):
                                     extra_info += (
                                         " No English subtitles found in media info"
